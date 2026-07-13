@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanket Ghosh — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">SG</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <!-- Rope Pull Theme Toggle -->
+      <button class="rope-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Pull to switch theme">
+        <div class="rope-mount">
+          <div class="rope-cord"></div>
+          <div class="rope-bob">
+            <svg class="rope-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            <svg class="rope-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </div>
+        </div>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="hero" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="hero-photo-wrap">
+            <img src="dp.jpg" alt="Sanket Ghosh" class="hero-photo">
+          </div>
+          <div class="hero-intro">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Sanket Ghosh</h1>
+            <p class="hero-tagline">Python Developer &middot; GenAI Specialist &middot; Researcher</p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">Get in Touch</a>
+              <a href="mailto:sanketghosh50@gmail.com" class="btn btn-outline btn-icon" title="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
+              <a href="https://github.com/bytedexter" class="btn btn-outline btn-icon" target="_blank" rel="noopener" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/sanketghosh19" class="btn btn-outline btn-icon" target="_blank" rel="noopener" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="https://scholar.google.com/citations?user=v3fIwVMAAAAJ&hl=en&oi=ao" class="btn btn-outline btn-icon" target="_blank" rel="noopener" title="Google Scholar">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+              </a>
+            </div>
+            <div class="hero-actions hero-actions-secondary">
+              <a href="#projects" class="btn btn-outline">View Work</a>
+              <a href="main (1).pdf" download class="btn btn-outline btn-download">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-about">
+            <h2 class="hero-about-title">About</h2>
+            <p>I am a B.Tech CSE student at the Institute of Engineering & Management, Kolkata, with a strong focus on Generative AI, agentic systems, and production-grade backend development.</p>
+            <p>Currently working as an AI Practice Intern at HumanizeTech.ai, I build FastAPI services, multi-agent pipelines, and RAG-powered document processing systems. As Student Industry Lead at IEM's GenAI CoE, I guide juniors on industry-level projects and run ReelBook, an initiative teaching AI through short-form video content.</p>
+            <p>I have authored 4 research papers on AI-driven stock market analysis, published at IRTM 2024, IEM HEALS 2024, and IEMENTech 2026, with one more submitted to a top-tier venue.</p>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number">9.12</span>
+                <span class="stat-label">CGPA</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Publications</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">6+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Internships</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section" style="display:none;"></section>
+
+  <!-- Experience -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>AI Practice Intern</h3>
+              <span class="timeline-date">Jan 2025 — May 2026</span>
+            </div>
+            <p class="timeline-company">HumanizeTech.ai &middot; Remote</p>
+            <ul class="timeline-list">
+              <li>Developed agentic workflows using LangGraph and Claude Code, coordinating tools, retrieval, and long-running async steps.</li>
+              <li>Built FastAPI services and background workers for large, heterogeneous document processing with AWS integrations.</li>
+              <li>Implemented context memory and prompt templates with LangChain; added vector search using Chroma for fast retrieval.</li>
+              <li>Delivered end-to-end, tool-integrated document pipelines (upload &rarr; parse &rarr; RAG &rarr; summaries) with asynchronous execution.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Software Developer Intern</h3>
+              <span class="timeline-date">Jul 2024 — Dec 2024</span>
+            </div>
+            <p class="timeline-company">Bair.ai &middot; Kolkata, India</p>
+            <ul class="timeline-list">
+              <li>Developed LSTM + meta-learning workflow combining CoinGecko market data with public sentiment (X, Telegram, Reddit).</li>
+              <li>Produced signals for memecoins with predicted uptrends over 3/5/7-day horizons.</li>
+              <li>Built data ingestion and preprocessing for multi-source time series and text.</li>
+              <li>Supported feature engineering and evaluation for short-horizon forecasting.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Student Industry Lead</h3>
+              <span class="timeline-date">Nov 2024 — Present</span>
+            </div>
+            <p class="timeline-company">Generative AI CoE, IEM &middot; Kolkata, India</p>
+            <ul class="timeline-list">
+              <li>Come up with industry-oriented project ideas and guide junior students in getting first-hand industry-level experience.</li>
+              <li>Launched ReelBook, a pioneering initiative to teach AI fundamentals through concise, engaging video content.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Undergraduate Research Assistant</h3>
+              <span class="timeline-date">Mar 2024 — Aug 2024</span>
+            </div>
+            <p class="timeline-company">Innovation &amp; Entrepreneurship Development Cell (CSE) &middot; Kolkata, India</p>
+            <ul class="timeline-list">
+              <li>Co-authored a research paper accepted at IEM-HEALS 2024 analyzing Jul 2019–Dec 2022 closing prices of 20 pharma stocks.</li>
+              <li>Developed a real-time stock trading simulation platform, TraderBot, using Flask for backend trade logic and MongoDB for data persistence.</li>
+              <li>Integrated Yahoo Finance API to fetch live market data, allowing users to simulate trading strategies.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+            <a href="https://github.com/bytedexter" class="project-link" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </div>
+          <h3>Hirely</h3>
+          <p class="project-subtitle">Agentic AI System for HR Automation</p>
+          <p class="project-desc">AI-powered recruitment automation using ChromaDB and Mistral LLM for CV screening, candidate search, interview scheduling, and real-time insights.</p>
+          <div class="project-tags">
+            <span>LangGraph</span><span>ChromaDB</span><span>Mistral LLM</span><span>FastAPI</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            <a href="https://github.com/bytedexter" class="project-link" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </div>
+          <h3>Pizzamania</h3>
+          <p class="project-subtitle">Agile Management Using Jira</p>
+          <p class="project-desc">Online pizza ordering system with agile methodology, featuring customization, real-time tracking, and secure payments for enhanced user experience.</p>
+          <div class="project-tags">
+            <span>Agile</span><span>Jira</span><span>Full Stack</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <a href="https://github.com/bytedexter" class="project-link" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </div>
+          <h3>HealthHub</h3>
+          <p class="project-subtitle">E-Commerce Platform for Health Products</p>
+          <p class="project-desc">Designed an e-commerce platform for health products with product management, shopping cart, and secure payments to improve wellness access.</p>
+          <div class="project-tags">
+            <span>E-Commerce</span><span>Product Management</span><span>Payments</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/><path d="M15 3v18"/></svg>
+            <a href="https://github.com/bytedexter" class="project-link" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </div>
+          <h3>TraderBot</h3>
+          <p class="project-subtitle">Real-Time Stock Trading Simulation</p>
+          <p class="project-desc">Stock trading simulation platform using Flask and MongoDB, integrated with Yahoo Finance API for live market data and strategy testing.</p>
+          <div class="project-tags">
+            <span>Flask</span><span>MongoDB</span><span>Yahoo Finance API</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Publications</h2>
+      <div class="publications-list">
+
+        <div class="pub-item">
+          <span class="pub-badge pub-accepted">Published</span>
+          <p class="pub-title">"The COVID-19 Shock: An Analysis Of Impacts And Responses Of Indian Stock Market"</p>
+          <p class="pub-venue">International Conference on Interdisciplinary Research in Technology and Management (IRTM 2024)</p>
+          <p class="pub-authors">Sanket Ghosh, Sanjan Baitalik, Rajashik Datta, Darothi Sarkar</p>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-badge pub-accepted">Published</span>
+          <p class="pub-title">"Machine Learning-Driven Insights For Stock Market Analysis And Trading"</p>
+          <p class="pub-venue">International Conference on Interdisciplinary Research in Technology and Management (IRTM 2024)</p>
+          <p class="pub-authors">Sanjan Baitalik, Rajashik Datta, Sanket Ghosh, Darothi Sarkar, Ayan Chaudhuri</p>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-badge pub-accepted">Published</span>
+          <p class="pub-title">"Explanation-First Agentic Forecaster for Stock Market"</p>
+          <p class="pub-venue">2026 9th International Conference on Electronics, Materials Engineering & Nano-Technology (IEMENTech 2026)</p>
+          <p class="pub-authors">Sanket Ghosh, Sanjan Baitalik, Rajashik Datta, Darothi Sarkar, Ayan Chaudhuri</p>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-badge pub-submitted">Submitted</span>
+          <p class="pub-title">"Multi-modal Framework for Memecoin Price Prognostication using Portfolio Risk-aware Independent Set Meta-learning (PRISM) Approach"</p>
+          <p class="pub-venue">Computational Economics, July 2026</p>
+          <p class="pub-authors">Sanket Ghosh, Sujaan Bhattacharyya, Sanjan Baitalik, Rajashik Datta, Subhabrata Banerjee</p>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-badge" style="background:#ede9fe;color:#5b21b6;">In Progress</span>
+          <p class="pub-title">"MiQ-MCP: Valid and Conditionally Robust Uncertainty Quantification for High-Frequency Financial Time Series via Mondrian Conformalized Quantile Regression"</p>
+          <p class="pub-venue">In Preparation</p>
+          <p class="pub-authors">Sanjan Baitalik, Rajashik Datta, Sanket Ghosh, Darothi Sarkar, Ayan Chaudhuri</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>Java</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>ML & AI</h3>
+          <div class="skill-tags">
+            <span>TensorFlow</span><span>PyTorch</span><span>Scikit-learn</span><span>Keras</span><span>LangChain</span><span>LangGraph</span><span>SHAP</span><span>LIME</span><span>Transformers</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Backend & APIs</h3>
+          <div class="skill-tags">
+            <span>FastAPI</span><span>Flask</span><span>REST APIs</span><span>Background Workers</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Data & Analytics</h3>
+          <div class="skill-tags">
+            <span>Pandas</span><span>NumPy</span><span>SciPy</span><span>Matplotlib</span><span>Seaborn</span><span>Tableau</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>ChromaDB</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Cloud & DevOps</h3>
+          <div class="skill-tags">
+            <span>AWS (S3, EC2, SageMaker)</span><span>GCP (BigQuery, Compute Engine)</span><span>Docker</span><span>Git</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Research Tools</h3>
+          <div class="skill-tags">
+            <span>LaTeX</span><span>Jupyter Notebook</span><span>Pytest</span><span>Locust</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-list">
+
+        <div class="edu-item">
+          <div class="edu-left">
+            <h3>B.Tech in Computer Science & Engineering</h3>
+            <p class="edu-school">Institute of Engineering & Management (IEM), Kolkata</p>
+          </div>
+          <div class="edu-right">
+            <span class="edu-date">2022 — 2026</span>
+            <span class="edu-score">CGPA: 9.06 / 10</span>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-left">
+            <h3>Higher Secondary (WBCHSE)</h3>
+            <p class="edu-school">Panchberia RCSS Mandir, Ghatal</p>
+          </div>
+          <div class="edu-right">
+            <span class="edu-date">2020 — 2022</span>
+            <span class="edu-score">96 / 100</span>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-left">
+            <h3>Primary & High School (WBBSE)</h3>
+            <p class="edu-school">Panchberia RCSS Mandir, Ghatal</p>
+          </div>
+          <div class="edu-right">
+            <span class="edu-date">2014 — 2020</span>
+            <span class="edu-score">95.86 / 100</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-text">
+          <p>I'm always open to discussing new projects, research opportunities, or collaborations in AI and software engineering.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:sanketghosh50@gmail.com" class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>sanketghosh50@gmail.com</span>
+          </a>
+          <a href="tel:+918537087644" class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 8537087644</span>
+          </a>
+          <a href="https://linkedin.com/in/sanketghosh19" class="contact-item" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/bytedexter" class="contact-item" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Sanket Ghosh. Built with passion.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
