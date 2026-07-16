@@ -341,6 +341,7 @@ img {
   color: var(--text-secondary);
   margin-bottom: 24px;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .hero-actions {
